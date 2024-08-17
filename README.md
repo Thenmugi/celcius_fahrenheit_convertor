@@ -1,0 +1,1 @@
+This project implements a simple Celsius to Fahrenheit converter using HTML, CSS, Tailwind and JavaScript. The converter allows users to input a temperature in Celsius and converts it into Fahrenheit.
