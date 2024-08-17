@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    <title>Celcius to Fahrenheit convertor</title>
+
+</head>
+<body class="bg-black h-screen flex justify-center items-center">
+    <div class="main w-1/2 h-2/3 bg-gray-500 flex flex-col items-center ">
+        
+        <h1 class="font-black text-2xl mt-10 md:text-3xl">Celcius to Fahreheit convertor</h1>
+        <input type="text" id="celcius" placeholder="Enter the celcius" class="bg-white-300 h-10 w-3/5 mt-20" >
+        <button class="border p-3 w-2/5 rounded-xl mt-6" type="submit" onclick="convert()">Convert to Fahrenheit</button>
+        <div id="result" class="text-white font-medium text-xl">
+
+        </div>
+    </div>
+    <script>
+        function convert(){
+            const a =Number(document.getElementById("celcius").value);
+            const b=(a*(9/5)) + 32;
+            const res =document.getElementById("result");
+            res.innerHTML =b.toFixed(2)+"Fahreheit";
+        }
+    </script>
+</body>
+</html>
